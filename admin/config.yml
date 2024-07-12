@@ -8,7 +8,7 @@ public_folder: /media
 collections:
   - label: Homepage
     files:
-    - label: Homepage
+    - label: Content
       name: site
       file: index.md
       name: homepage
