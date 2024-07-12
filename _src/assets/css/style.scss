@@ -103,9 +103,15 @@ h2 {
 h3 {
     font-size: 1.4em;
 }
-
-
 p {
     line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 .2em;
+    color: #111;
+    font-style: italic;
+    background: rgba(255,255,255,.8);
 }
 
