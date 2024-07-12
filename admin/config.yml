@@ -9,11 +9,11 @@ collections:
   - label: Homepage
     name: homepage
     files:
-    - label: Content
+    - label: {{title}}
       name: content
       editor:
         preview: false
-      file: _src/index.md
+      file: ../_src/index.md
       fields:
         - { label: Title, name: title, widget: string }
         - { label: Date, name: date, widget: datetime, required: false }
@@ -26,7 +26,7 @@ collections:
         name: site
         editor:
           preview: false
-        file: _src/_data/site.json
+        file: ../_src/_data/site.json
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string, required: false }
