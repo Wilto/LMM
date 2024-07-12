@@ -90,7 +90,8 @@ h1, h2, h3, h4, h5, .lede {
     font-family: "Source Sans", sans-serif;
 }
 .lede {
-    font-size: 4em;
+    font-size: 3.5em;
+    font-size: clamp( 2.8em, 8vw, 4em );
     line-height: 1;
     max-width: 20ch;
 }
