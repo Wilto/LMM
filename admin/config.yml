@@ -11,7 +11,7 @@ collections:
     files:
     - label: Content
       name: content
-      file: index.md
+      file: _src/index.md
       fields:
         - { label: Title, name: title, widget: string }
         - { label: Date, name: date, widget: datetime, required: false }
@@ -22,7 +22,7 @@ collections:
     files:
       - label: Site
         name: site
-        file: _data/site.json
+        file: _src/_data/site.json
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string, required: false }
