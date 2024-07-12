@@ -11,6 +11,8 @@ collections:
     files:
     - label: Content
       name: content
+      editor:
+        preview: false
       file: _src/index.md
       fields:
         - { label: Title, name: title, widget: string }
@@ -22,6 +24,8 @@ collections:
     files:
       - label: Site
         name: site
+        editor:
+          preview: false
         file: _src/_data/site.json
         fields:
           - { label: Title, name: title, widget: string }
