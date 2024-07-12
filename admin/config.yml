@@ -11,7 +11,7 @@ collections:
     - label: Homepage
       name: site
       file: index.md
-      name: homapage
+      name: homepage
       create: true
       fields:
         - { label: Title, name: title, widget: string }
