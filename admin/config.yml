@@ -7,10 +7,11 @@ public_folder: /media
 
 collections:
   - label: Homepage
+  - name homepage
     files:
-    - label: Homepage
+    - label: Content
+      name: content
       file: index.md
-      name: homepage
       fields:
         - { label: Title, name: title, widget: string }
         - { label: Date, name: date, widget: datetime, required: false }
