@@ -8,11 +8,9 @@ public_folder: /media
 collections:
   - label: Homepage
     files:
-    - label: Content
-      name: site
+    - label: Homepage
       file: index.md
       name: homepage
-      create: true
       fields:
         - { label: Title, name: title, widget: string }
         - { label: Date, name: date, widget: datetime, required: false }
