@@ -6,27 +6,27 @@ media_folder: media
 public_folder: /media
 
 collections:
-  - label: Homepage
-    name: homepage
+  - label: 'Homepage'
+    name: 'homepage'
     files:
-    - label: Content
-      name: content
+    - label: 'Content'
+      name: 'content'
       editor:
         preview: false
-      file: _src/index.md
+      file: '_src/index.md'
       fields:
         - { label: Title, name: title, widget: string }
         - { label: Date, name: date, widget: datetime, required: false }
         - { label: Tags, name: tags, widget: list, default: ["post"] }
         - { label: Content, name: body, widget: markdown }
-  - label: Settings
-    name: settings
+  - label: 'Settings'
+    name: 'settings'
     files:
       - label: Site
         name: site
         editor:
           preview: false
-        file: _data/site.json
+        file: '_src/_data/site.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string, required: false }
