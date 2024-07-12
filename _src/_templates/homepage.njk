@@ -3,9 +3,9 @@ layout: base.njk
 ---
 <header>
     <h1>{{ site.title }}</h1>
-    <p>{{ site.lede }}</p>
+    <p class="lede">{{ site.lede }}</p>
 </header>
-<main>
+<main id="main">
     <h2>{{ title | safe }}</h2>
     {{ content | safe }}
 </main>

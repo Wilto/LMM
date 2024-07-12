@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="{{ eleventy.generator }}">
-    
+
     {% if site.description %}
     <meta name="description" content="{{ site.description }}">
     {% endif %}
     <title>{{ title or site.title }}</title>
 
     {% set css %}
-        {% include "../css/style.scss" %}
+        {% include "../assets/css/style.scss" %}
     {% endset %}
     <style>
         {{ css | cssmin | safe }}
@@ -22,6 +22,30 @@
             if(location.hash) window.location = `/admin/#${location.href.split("#").pop()}`
         </script>
     {% endif %}
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "{{ site.url }}#main",
+            "givenName": "Lisa",
+            "familyName": "Marquis",
+            "alternateName": "LMM",
+            "description": "Information Architect",
+            "email": "…",
+            "jobTitle": "Independent Consultant",
+            "sameAs" : [
+                "https://front-end.social/…",
+            ] 
+        }
+    </script>
+
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="https://hire.wil.to">
+    <meta property="og:description" content="{{ site.lede }}">
+    <meta property="og:image" content="{{ site.lede }}/media/card.gif">
+    <meta property="og:image:alt" content="I make websites.">
 </head>
 <body>
     {{ content | safe }}

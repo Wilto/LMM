@@ -4,7 +4,7 @@ const sass = require('sass');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("admin");
-    eleventyConfig.addPassthroughCopy("_src/img");
+    eleventyConfig.addPassthroughCopy("_src/assets");
 
     eleventyConfig.addFilter("formatDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toISODate();
