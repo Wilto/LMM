@@ -16,8 +16,6 @@ collections:
       file: '_src/index.md'
       fields:
         - { label: Title, name: title, widget: string }
-        - { label: Date, name: date, widget: datetime, required: false }
-        - { label: Tags, name: tags, widget: list, default: ["post"] }
         - { label: Content, name: body, widget: markdown }
   - label: 'Settings'
     name: 'settings'
@@ -28,7 +26,8 @@ collections:
           preview: false
         file: '_src/_data/site.json'
         fields:
-          - { label: Title, name: title, widget: string }
+          - { label: Title, name: title, widget: string, required: false }
+          - { label: Lede, name: lede, widget: string, required: false }
           - { label: Description, name: description, widget: string, required: false }
           - { label: Language, name: language, widget: string }
           - { label: URL, name: url, widget: string, required: false }
