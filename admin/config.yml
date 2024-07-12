@@ -7,7 +7,7 @@ public_folder: /media
 
 collections:
   - label: Homepage
-  - name: homepage
+    name: homepage
     files:
     - label: Content
       name: content
