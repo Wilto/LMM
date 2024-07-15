@@ -1,18 +1,19 @@
 {
-    "language": "en",
-    "title": "Bringing order to information chaos since 2014.",
-    "url": "https://lmm-new.netlify.app",
-    "author": "Lisa Maria Marquis",
-    "email" : "#",
-    "role" : "Independent Consultant",
-    "socials" : [
-        {
-            "site" : "Mastodon",
-            "url" : "https://front-end.social/@redsesame"
-        },
-        {
-            "site" : "LinkedIn",
-            "url" : "https://www.linkedin.com/in/redsesame/"
-        }
-    ]
+  "language": "en",
+  "title": "Bringing order to information chaos since 2014.",
+  "url": "https://lmm-new.netlify.app",
+  "author": "Lisa Maria Marquis",
+  "email": "#",
+  "role": "Independent Consultant",
+  "socials": [
+    {
+      "site": "Mastodon",
+      "url": "https://front-end.social/@redsesame",
+      "icon": "/media/mastodon.svg"
+    },
+    {
+      "site": "LinkedIn",
+      "url": "https://www.linkedin.com/in/redsesame/"
+    }
+  ]
 }
