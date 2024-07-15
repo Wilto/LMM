@@ -1,9 +1,8 @@
 ---
 layout: homepage.njk
 title: I’m Lisa Maria Marquis.
+lede: I’m a consultant who thrives on strategizing and organizing complex digital information.
 ---
-
-I’m a consultant who thrives on strategizing and organizing complex digital information.
 
 And complex digital information is *everywhere*. It’s what our websites, apps, and intranets are made of. It’s so prevalent that we take it for granted, not realizing that information needs deliberate structure and strategy in order to be useful.
 

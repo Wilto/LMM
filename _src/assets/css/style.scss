@@ -86,10 +86,11 @@ main {
     max-width: 40em;
 }
 
-h1, h2, h3, h4, h5, .lede {
+h1, h2, h3, h4, h5, .site-lede {
     font-family: "Source Sans", sans-serif;
+    margin: 1.25em 0 0 0;
 }
-.lede {
+.site-lede {
     font-size: 3.5em;
     font-size: clamp( 2.8em, 8vw, 4em );
     line-height: 1;
@@ -105,7 +106,12 @@ h3 {
     font-size: 1.4em;
 }
 p {
-    line-height: 1.8;
+    padding-right: 1em;
+    font-size: .925em;
+    line-height: 1.7;
+}
+.lede  {
+    font-size: 1em;
 }
 
 a {
@@ -113,6 +119,23 @@ a {
     padding: 0 .2em;
     color: #111;
     font-style: italic;
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.7);
+}
+
+a {
+    position: relative;
+    &:hover {
+        --active: 1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #fff, transparent 15vmin);
+        background-attachment: fixed;
+        opacity: var(--active, 0);
+        transition: opacity 0.2s;
+        z-index: -1;
+    }
 }
 
