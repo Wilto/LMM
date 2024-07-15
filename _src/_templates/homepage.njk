@@ -11,9 +11,20 @@ layout: base.njk
 </main>
 <footer>
     {% if site.socials %}
-    {% for social in site.socials %}
-        {{ social.site }}
-        {{ social.url }}
-    {% endfor %}
+    <nav aria-label="Social links">
+        <ul>
+        {% for social in site.socials %}
+            <li>
+                <a href="{{ social.url }}">
+                {% if social.icon %}
+                    <img src="{{ social.icon }}" alt="{{ social.site }}">
+                {% else %}
+                    {{ social.site }}
+                {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </nav>
     {% endif %}
 </footer>
