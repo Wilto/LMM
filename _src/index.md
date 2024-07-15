@@ -10,19 +10,19 @@ That’s my job. I work with design, content, and product teams to help them get
 
 Got a tricky information or content problem to solve? Let’s talk.
 
-Contact me
+<button aria-expanded="false" data-controls="#dialog" class="btn btn-contact">Contact Me</button>
  
 ### Read my book.
 
 [Everyday Information Architecture](https://everydayia.com/) (2019) is a practical guide for designers, content strategists, developers, product managers, and anyone interesting in building well-structured digital content. Available in print and ebook formats.
 
 ### Take my workshops.
-
+	
 I offer independent workshops on information architecture topics in the fall and spring—check back for upcoming dates. I also offer workshops for teams and conferences.
 
 ### Sign up for my newsletter.
 
-[The Future Is Like Pie](https://thefutureislikepie.beehiiv.com/subscribe) is a monthly newsletter with a brief essay and links to interesting writing about design, technology, politics, and culture. I bet you’d like it.
+[The Future Is Like Pie](https://thefutureislikepie.beehiiv.com/subscribe) is a monthly newsletter with a brief essay and links to interesting writing about design, technology, politics, and culture. I bet you’d like it.	
 
 ### A little about me.
 

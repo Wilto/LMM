@@ -86,8 +86,13 @@ main {
     max-width: 40em;
 }
 footer {
-    align-self: flex-end;
     margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5em;
+    width: 100%;
     ul {
         display: flex;
         flex-direction: row;
@@ -145,7 +150,7 @@ main a {
     border-radius: 2px;
     color: #111;
     font-style: italic;
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.65);
     position: relative;
     &:hover {
         --active: 1;
@@ -158,8 +163,79 @@ main a {
         background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #fff, transparent 15vmin);
         background-attachment: fixed;
         opacity: var(--active, 0);
-        transition: opacity 0.2s;
+        transition: opacity 0.5s;
         z-index: -1;
+    }
+}
+
+.btn {
+    padding: 2.25em 3.5em 2em 3.5em;
+    border-radius: 0;
+    background: #000;
+    border: 0;
+    font-size: 1rem;
+    color: #49C9D0;
+    font-family: "Open Sans", sans-serif;
+}
+.btn-contact {
+    margin-top: 1em;
+}
+.modal {
+    border: none;
+}
+.modal::backdrop {
+    background: rgba(0,0,0,.5);
+}
+.contact {
+    background: #000;
+    padding: 1.5em 1em;
+    color: #49C9D0;
+    max-width: 35em;
+    width: 100%;
+    h2 {
+        margin: 0;
+    }
+    p {
+        margin-top: .25em;
+    }
+    .btn-close {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        height: 1em;
+        width: 1em;
+        line-height: .1;
+        padding: 0 0 .125em 0;
+        border: 1px solid red;
+        background: none;
+        border: none;
+        font-size: 1em;
+        color: #49C9D0;
+    }
+    .btn-send {
+        background: #49C9D0;
+        color: #000;
+        padding: 2em 3.25em 1.65em 3.25em;
+        margin-top: 1em;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        font-family: "Adelle", sans-serif;
+        font-size: .7em;
+        padding: .85em 0 .5em 0;
+    }
+    input, textarea {
+        background: #0E3F3F;
+        font-family: "Open Sans", sans-serif;
+        color: rgba(255,255,255,.75);
+        font-size: 1.4rem;
+        margin-top: .2em;
+        padding: .65em .7em .35em .7em;
+        border: 2px solid #2F8A8E;
+    }
+    textarea {
+        min-height: 5em;
     }
 }
 
