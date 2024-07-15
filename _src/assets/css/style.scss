@@ -85,6 +85,31 @@ main {
     width: 100%;
     max-width: 40em;
 }
+footer {
+    align-self: flex-end;
+    margin-top: 5em;
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-apart;
+        gap: 7.5%;
+        list-style: none;
+    }
+    a {
+        font-size: .75em;
+        opacity: .75;
+        color: rgba(0,0,0,1);
+        font-family: "Open Sans", sans-serif;
+        transition: opacity .15s linear;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    img {
+        max-width: 2.5em;
+    }
+}
 
 h1, h2, h3, h4, h5, .site-lede {
     font-family: "Source Sans", sans-serif;
@@ -114,16 +139,13 @@ p {
     font-size: 1em;
 }
 
-a {
+main a {
     text-decoration: none;
     padding: 0 .2em;
     border-radius: 2px;
     color: #111;
     font-style: italic;
     background: rgba(255,255,255,.7);
-}
-
-a {
     position: relative;
     &:hover {
         --active: 1;
