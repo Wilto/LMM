@@ -36,8 +36,8 @@ collections:
           - label: "Social Links"
             name: "socials"
             widget: "list"
-            summary: '{{ fields.label }}'
+            summary: '{{ fields.sitelabel }}'
             fields:
-              - {label: 'Label', name: label, widget: string }
+              - {label: 'Label', name: sitelabel, widget: string }
               - {label: 'Icon', name: icon, widget: image, choose_url: false }
               - {label: 'URL', name: url, widget: string }
