@@ -7,11 +7,11 @@
     "role" : "Independent Consultant",
     "socials" : [
         {
-            "site" : "Mastodon",
+            "label" : "Mastodon",
             "url" : "https://front-end.social/@redsesame"
         },
         {
-            "site" : "LinkedIn",
+            "label" : "LinkedIn",
             "url" : "https://www.linkedin.com/in/redsesame/"
         }
     ]
