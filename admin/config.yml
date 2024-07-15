@@ -39,5 +39,5 @@ collections:
             summary: '{{fields.site}}'
             fields:
               - {label: 'Label', name: site, widget: string }
-              - {label: 'Icon', name: icon, widget: image, choose_url: false }
+              - {label: 'Icon', name: icon, widget: image, choose_url: false, required: false }
               - {label: 'URL', name: url, widget: string }
