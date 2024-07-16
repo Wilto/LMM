@@ -10,7 +10,7 @@ That’s my job. I work with design, content, and product teams to help them get
 
 Got a tricky information or content problem to solve? Let’s talk.
 
-<button aria-expanded="false" data-controls="#dialog" class="btn btn-contact">Contact Me</button>
+<button aria-expanded="false" data-controls="#dialog" class="btn btn-contact">{{ site.microcopy.contact.contact }}</button>
  
 ### Read my book.
 

@@ -27,7 +27,8 @@ module.exports = function(eleventyConfig) {
 
     return {
         templateFormats: [
-            "md"
+            "md",
+            "njk"
         ],
         pathPrefix: "/",
         markdownTemplateEngine: "njk",

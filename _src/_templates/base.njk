@@ -48,7 +48,7 @@
 <body>
 
     <header>
-        <h1 class="site-lede">{{ site.title }}</h1>
+        <h1 class="site-lede"><a href="/">{{ site.title }}</a></h1>
     </header>
     <main id="main">
     {{ content | safe }}
@@ -58,7 +58,7 @@
             <small>{{ site.copyright }}</small>
         {% endif %}
         {% if site.socials %}
-        <nav aria-label="Social links">
+        <nav aria-label="Social links" class="socials">
             <ul>
             {% for social in site.socials %}
                 <li>

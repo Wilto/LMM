@@ -30,8 +30,8 @@ const form = document.querySelector( 'form[name="contact"]' ),
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams( data ).toString()
         })
-        .then( createResult( "{{ site.formsuccess }}" ) )
-        .catch( createResult( "{{ site.formerror }}" ) );
+        .then( createResult( "{{ site.microcopy.contact.success }}" ) )
+        .catch( createResult( "{{ site.microcopy.contact.error }}" ) );
 
         event.preventDefault();
     };
