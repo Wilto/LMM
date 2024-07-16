@@ -8,10 +8,16 @@
     },
     {
       "site": "LinkedIn",
-      "url": "https://www.linkedin.com/in/redsesame/"
+      "url": "https://www.linkedin.com/in/redsesame/",
+      "icon": "/img/linkedin-logo.png"
+    },
+    {
+      "site": "Bluesky",
+      "icon": "/img/bsky-logo.png",
+      "url": "https://bsky.app/profile/redsesame.bsky.social"
     }
   ],
-  "copyright": "lorem ipsum 2024",
+  "copyright": "©2024 Lisa Maria Marquis",
   "author": "Lisa Maria Marquis",
   "url": "https://lmm-new.netlify.app",
   "role": "Independent Consultant",
@@ -19,8 +25,8 @@
   "language": "en",
   "microcopy": {
     "contact": {
-      "contact": "Contact me!",
-      "success": "That form went through.",
+      "contact": "Contact me",
+      "success": "Thank you!",
       "error": "Something went wrong."
     },
     "notfound": "404: Page not found."
