@@ -45,11 +45,13 @@ collections:
           - label: "Microcopy"
             name: "microcopy"
             widget: "object"
+            collapsed: true
+            summary: '{{fields.name}}'
             fields:
               - {label: "Page Not Found", name: "notfound", widget: "string", default: "404: Page not found" }
               - label: "Contact Form"
                 name: "contact"
-                widget: "forms"
+                widget: "object"
                 fields: 
                   - {label: "Contact Button", name: "contact", widget: "string", default: "Contact me" }
                   - {label: "Success", name: "success", widget: "string", default: "Successfully submitted." }
