@@ -194,11 +194,18 @@ main a {
 .btn {
     padding: 2.25em 3.5em 2em 3.5em;
     border-radius: 0;
-    background: #000;
+    background: rgba(0,0,0,.85);
     border: 0;
     font-size: clamp( .8rem, 2vw, 1rem );
     color: #49C9D0;
     font-family: "Source Sans", sans-serif;
+    cursor: pointer;
+    transition: background .2s linear;
+
+    &:hover {
+        color: #45D5DD;
+        background: #000;
+    }
 }
 .btn-contact {
     margin-top: 1em;
@@ -211,8 +218,8 @@ main a {
 }
 .contact {
     background: #000;
-    padding: 1.5em 1em;
     color: #49C9D0;
+    padding: 1.5em 1em;
     max-width: 35em;
     width: 100%;
     h2 {
@@ -235,6 +242,9 @@ main a {
         font-size: 1em;
         color: #49C9D0;
         cursor: pointer;
+        &:hover {
+            color: #45D5DD;
+        }
     }
     .btn-send {
         background: #49C9D0;
