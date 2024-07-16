@@ -1,5 +1,13 @@
 @font-face {
     font-family: 'Source Sans';
+    src: url('/assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
+         url('/assets/fonts/sourcesanspro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Source Sans';
     src: url('/assets/fonts/sourcesanspro-bold.woff2') format('woff2'),
          url('/assets/fonts/sourcesanspro-bold.woff') format('woff');
     font-weight: bold;
@@ -105,7 +113,7 @@ footer {
         font-size: .75em;
         opacity: .75;
         color: rgba(0,0,0,1);
-        font-family: "Open Sans", sans-serif;
+        font-family: "Source Sans", sans-serif;
         transition: opacity .15s linear;
         &:hover {
             opacity: 1;
@@ -175,7 +183,7 @@ main a {
     border: 0;
     font-size: 1rem;
     color: #49C9D0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans", sans-serif;
 }
 .btn-contact {
     margin-top: 1em;
@@ -211,6 +219,7 @@ main a {
         border: none;
         font-size: 1em;
         color: #49C9D0;
+        cursor: pointer;
     }
     .btn-send {
         background: #49C9D0;
@@ -227,15 +236,22 @@ main a {
     }
     input, textarea {
         background: #0E3F3F;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Source Sans", sans-serif;
         color: rgba(255,255,255,.75);
         font-size: 1.4rem;
         margin-top: .2em;
-        padding: .65em .7em .35em .7em;
+        padding: .65em .7em .4em .7em;
         border: 2px solid #2F8A8E;
+        font-weight: normal;
+        &:not(:placeholder-shown):invalid {
+            border: 2px solid #fff;
+        }
+        &:valid {
+            border: 2px solid #49C9D0;
+        }
     }
     textarea {
-        min-height: 5em;
+        min-height: 6.5em;
     }
 }
 
