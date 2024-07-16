@@ -6,6 +6,8 @@
   "email": "lisamariamarquis@gmail.com",
   "role": "Independent Consultant",
   "copyright": "lorem ipsum 2024",
+  "formsuccess" : "Success.",
+  "formerror" : "Sorry, an error occurred.",
   "socials": [
     {
       "site": "Mastodon",

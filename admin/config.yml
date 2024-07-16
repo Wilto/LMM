@@ -42,3 +42,15 @@ collections:
               - {label: 'Label', name: site, widget: string }
               - {label: 'Icon', name: icon, widget: image, choose_url: false, required: false }
               - {label: 'URL', name: url, widget: string }
+          - label: "Microcopy"
+            name: "microcopy"
+            widget: "object"
+            fields:
+              - {label: "Page Not Found", name: "notfound", widget: "string", default: "404: Page not found" }
+              - label: "Contact Form"
+                name: "contact"
+                widget: "forms"
+                fields: 
+                  - {label: "Contact Button", name: "contact", widget: "string", default: "Contact me" }
+                  - {label: "Success", name: "success", widget: "string", default: "Successfully submitted." }
+                  - {label: "Error", name: "error", widget: "string", default: "Sorry, there was an error." }

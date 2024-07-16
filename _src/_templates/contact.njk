@@ -1,0 +1,41 @@
+<button class="btn-close" aria-label="Close">×</button>
+<h2>Contact</h2>
+<form name="contact" method="POST" data-netlify="true">
+    <p>All fields are required.</p>
+    <label>Name: <input type="text" name="name" placeholder="" required></label>
+    <label>Email: <input type="email" name="email" placeholder="you@domain.com" required></label>
+    <label>Company: <input type="text" name="company" placeholder="" required></label>
+    <label>What would you like to talk about?
+        <textarea name="message" placeholder="" required></textarea>
+    </label>
+    <button type="submit" class="btn btn-send">Send</button>
+</form>
+
+<script>
+const form = document.querySelector( 'form[name="contact"]' ),
+    createResult = ( str ) => {
+        const result = document.createElement( 'p' );
+        const msg = document.createTextNode( str );
+
+        result.classList.add( 'form-result' );
+        result.appendChild( msg );
+        form.replaceWith( result );
+    }
+    formSubmission = ( event ) => {
+        const contact = event.target;
+        const data = new FormData( contact );
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams( data ).toString()
+        })
+        .then( createResult( "{{ site.formsuccess }}" ) )
+        .catch( createResult( "{{ site.formerror }}" ) );
+
+        event.preventDefault();
+    };
+
+    form.addEventListener( 'submit', formSubmission );
+
+</script>
