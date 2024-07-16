@@ -1,13 +1,5 @@
 {
-  "language": "en",
-  "title": "Bringing order to information chaos since 2014.",
-  "url": "https://lmm-new.netlify.app",
-  "author": "Lisa Maria Marquis",
-  "email": "lisamariamarquis@gmail.com",
-  "role": "Independent Consultant",
-  "copyright": "lorem ipsum 2024",
-  "formsuccess" : "Success.",
-  "formerror" : "Sorry, an error occurred.",
+  "formerror": "Sorry, an error occurred.",
   "socials": [
     {
       "site": "Mastodon",
@@ -18,5 +10,21 @@
       "site": "LinkedIn",
       "url": "https://www.linkedin.com/in/redsesame/"
     }
-  ]
+  ],
+  "copyright": "lorem ipsum 2024",
+  "author": "Lisa Maria Marquis",
+  "url": "https://lmm-new.netlify.app",
+  "role": "Independent Consultant",
+  "title": "Bringing order to information chaos since 2014.",
+  "language": "en",
+  "microcopy": {
+    "contact": {
+      "contact": "Contact me!",
+      "success": "That form went through.",
+      "error": "Something went wrong."
+    },
+    "notfound": "404: Page not found."
+  },
+  "email": "lisamariamarquis@gmail.com",
+  "formsuccess": "Success."
 }
