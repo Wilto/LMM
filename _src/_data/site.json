@@ -2,14 +2,19 @@
   "formerror": "Sorry, an error occurred.",
   "socials": [
     {
-      "site": "Mastodon",
-      "url": "https://front-end.social/@redsesame",
-      "icon": "/img/mastodon.svg"
+      "site": "Newsletter",
+      "icon": "/img/beehiiv-logo.png",
+      "url": "https://thefutureislikepie.beehiiv.com/subscribe"
     },
     {
       "site": "LinkedIn",
       "url": "https://www.linkedin.com/in/redsesame/",
       "icon": "/img/linkedin-logo.png"
+    },
+    {
+      "site": "Mastodon",
+      "url": "https://front-end.social/@redsesame",
+      "icon": "/img/mastodon.svg"
     },
     {
       "site": "Bluesky",
