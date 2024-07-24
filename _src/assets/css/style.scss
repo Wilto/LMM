@@ -188,17 +188,23 @@ main a {
     position: relative;
     &:hover {
         --active: 1;
+        background: rgba(255,255,255,1);
     }
-    &:after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 2px;
-        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #fff, transparent 15vmin);
-        background-attachment: fixed;
-        opacity: var(--active, 0);
-        transition: opacity 0.5s;
-        z-index: -1;
+    @media (prefers-reduced-motion: no-preference) {
+        &:hover {
+            background: rgba(255,255,255,.65);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 2px;
+            background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #fff, transparent 15vmin);
+            background-attachment: fixed;
+            opacity: var(--active, 0);
+            transition: opacity 0.5s;
+            z-index: -1;
+        }
     }
 }
 
@@ -217,17 +223,23 @@ main a {
 
     &:hover {
         --active: 1;
+        background: rgba(0,0,0,1);
     }
-    &:after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 2px;
-        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #000, transparent 15vmin);
-        background-attachment: fixed;
-        opacity: var(--active, 0);
-        transition: opacity 0.5s;
-        z-index: -1;
+    @media (prefers-reduced-motion: no-preference) {
+        &:hover {
+            background: rgba(0,0,0,.75);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 2px;
+            background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #000, transparent 15vmin);
+            background-attachment: fixed;
+            opacity: var(--active, 0);
+            transition: opacity 0.5s;
+            z-index: -1;
+        }
     }
 }
 .btn-contact {
