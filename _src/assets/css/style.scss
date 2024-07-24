@@ -109,7 +109,7 @@ footer {
     small {
         font-style: italic;
         font-size: clamp( .85rem, 2vw, 1rem );
-        color: #555;
+        color: rgba(255,255,255,.9);
         min-width: 15em;
     }
     .socials {
