@@ -101,6 +101,12 @@
                 dialog  = document.querySelector( control.dataset.controls );
                 closer  = dialog.querySelector( ".btn-close" );
 
+            if( typeof dialog.showModal === "undefined" ) {
+                dialog.classList.add( "swapped" );
+                control.replaceWith( dialog );
+                return;
+            }
+
             control.addEventListener( "click", function( e ) {
                 dialog.setAttribute( "aria-hidden", false );
                 dialog.showModal();
@@ -113,5 +119,6 @@
             });
         }());
     </script>
+    <script src="/assets/js/dialog-polyfill.js"></script>
 </body>
 </html>
