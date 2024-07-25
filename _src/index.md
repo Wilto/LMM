@@ -4,7 +4,7 @@ title: I’m Lisa Maria Marquis.
 lede: I’m a consultant who thrives on strategizing and organizing complex
   digital information.
 ---
-And complex digital information is *everywhere*. It’s what our websites, apps, and intranets are made of. It’s so prevalent that we take it for granted, not realizing that information needs deliberate structure and strategy in order to be useful.
+And complex digital information is *everywhere*. It’s what our websites, apps, and intranets are made of. It’s so prevalent that we take it for granted, not realizing that information needs deliberate structure and strategy in order to be effective.
 
 That’s my job. I work with design, content, and product teams to help them get unruly informational systems under control, and make content easier for people to find, use, and manage.
 
@@ -26,4 +26,4 @@ I offer independent workshops on information architecture topics in the fall and
 
 ### A little about me.
 
-Lisa Maria Marquis is an information architect and content strategist specializing in the structural analysis of digital systems, helping organizations to build findable, understandable, and usable content experiences. She is a consultant, speaker, workshop leader, author of *Everyday Information Architecture*, avid knitter, and devoted Trekkie. She lives near Boston with her partner, two dogs, four chickens, and roughly ten thousand bees.
+Lisa Maria Marquis is an independent consultant specializing in the structural analysis of digital systems, helping organizations to build findable, understandable, and usable product experiences. She is a speaker, workshop leader, author of *Everyday Information Architecture*, avid knitter, and devoted Trekkie. She lives near Boston with her partner, two dogs, four chickens, and roughly ten thousand bees.
