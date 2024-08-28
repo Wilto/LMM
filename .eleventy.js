@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("_src/img");
     eleventyConfig.addPassthroughCopy("_src/assets");
 
+    eleventyConfig.addPassthroughCopy("pivot-tables-are-magic");
+
     eleventyConfig.addFilter("formatDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toISODate();
     });

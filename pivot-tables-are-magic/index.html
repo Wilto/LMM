@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="fonts">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="The Future is Like Pie">
+    <link rel="canonical" href="https://thefutureislikepie.com">
+
+    <title>The Future is Like Pie</title>
+    <meta name="description" content="I make information easier to use.">
+    <meta name="author" content="Lisa Maria Martin">
+
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+  </head>
+  <body  class="has-post-art">
+    
+    <div class="post-art">
+      
+  <img 
+    sizes="100vw"
+    srcset="
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=600 600w,
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=800 800w,
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=1000 1000w,
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=1400 1400w,
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=2000 2000w,
+      ./img/headers/pivot-tables.jpg?nf_resize=fit&w=2400 2400w"
+    src="./img/headers/pivot-tables.jpg.jpg" 
+    alt="Green and white mailboxes numbered one through seven.">
+
+    </div>
+    
+    <header class="site-head">
+      <div class="sub-body">
+        <h1 class="logo"><a href="/"><img src="./img/logo.svg" alt="The Future is Like Pie"></a></h1>
+      </div>
+    </header>
+
+    <main role="main" id="main" class="tmpl-post">
+      <div class="body">
+        
+<div class="sub-body">
+  
+  <p class="postdate">April 23, 2018</p>
+  
+  <h2 class="page-hed">Pivot Tables are Magic</h2>
+  <div class="hero">
+    <p>For me, working with automated crawl data is about translation: how do I make meaning out of these robot results? How do I condense the noisy numbers into a signal—something that provides insights for my strategy and brings my clients along on the journey?</p>
+  </div>
+  <div class="post-copy">
+    <p>Automated audits are a common, and often crucial, tool in content work—but they’re nearly useless in their raw form:</p>
+<p><img src="./img/pivot.jpg" alt="Spreadsheet cells full of meaningless numbers."></p>
+<p>For me, working with automated crawl data is about translation: how do I make meaning out of these robot results? How do I condense the noisy numbers into a signal—something that provides insights for my strategy <em>and</em> brings my clients along on the journey?</p>
+<p>Thank heavens for pivot tables, a bit of spreadsheet functionality that I rely on for parsing that data. They are a bridge between an infinite void of data and a scrutable set of charts and recommendations.</p>
+<p>I adore them, but not everyone knows what they are or how they work, so I wanted to show one way that I use them in my content analyses.</p>
+<p>(Quick disclaimer: I am about to talk a <em>lot</em> about Excel. I am not an Excel expert. This means my methodology may be… let’s call it <em>imperfect</em>. Also, pivot tables work a little differently on Mac versus Windows; I’m writing from a Mac perspective.)</p>
+<h3>What are pivot tables for?</h3>
+<p>Formal talk: <em>pivot tables calculate the portion of entries in a large data set that conform to specific criteria.</em></p>
+<p>Content audit talk: <em>pivot tables will instantly tell you how many pages exist in each section of your site.</em></p>
+<p>And they’ll do it quickly and cheaply and nonchalantly. They crunch numbers much more efficiently than eyeballs can, making them especially useful for big sites.</p>
+<p>They’ll do a lot more than that, too, but for now, let’s just stick with this <a href="http://thefutureislikepie.com/what-to-ask-before-you-audit/">one common audit question</a>: what do I have, and where do I have it?</p>
+<h3>A step-by-step tutorial</h3>
+<p>I’m going to show you, with screenshots, exactly how I build a pivot table to measure page distribution across sections of a site.</p>
+<h4>Step 1: Add section data</h4>
+<p>First, I have to manually add the site section for each page into a new column in my audit spreadsheet.</p>
+<p>Most crawl tools can’t scrape section data, because “site sections” are loosey-goosey human conventions. Unless a site has extraordinarily rigorous governance and URL management strategies, there is going to be a lot of disagreement over what constitutes “sections.” The main navigation, the URL structures, and observable user pathways all create different boundaries.</p>
+<p>I use URL structure as my “site section” delineator—that is, I consider the section to be whatever the first folder level is off the main domain. So a URL like website.com/about would tell me that the page is in the “About” section. This is the quickest way to add section data, even for 10,000+ entries (like my last audit).</p>
+<p>(That approach wouldn’t work on a site where the URLs don’t follow folder paths, i.e. all pages spring directly from the main domain. But if there are at least <em>some</em> folder pathways, I’m comfortable using them as a proxy for sectioning. If, upon deeper review of the site, I discover that the folder paths <em>aren’t</em> reliable indicators—well, that, too, is a valuable insight, indicative of inconsistent URL strategies and broken menus.)</p>
+<p>In my last audit (potentially identifying information redacted!), you can see that I manually added not only a column for Section, but Subsection as well:</p>
+<p><img src="./img/audit-data.png" alt="The audit data with new columns for Section and Subsection next to the Address column."></p>
+<h4>Step 2: Build the pivot table</h4>
+<p>Once I’ve manually added section data to the spreadsheet, I can set up my pivot table. To do this, first I select my data—the whole sheet, or just the columns I think I’ll need—then select Data in the main menu, then select Summarize with Pivot Table.</p>
+<p>That brings up this modal:</p>
+<p><img src="./img/excel-popup.png" alt="Excel's pop-up modal for creating a pivot table."></p>
+<p>The highlighted field shows the range of data selected (in this example, my sheet is called “Combined Results,” and I selected columns A through L). I always place it on a new worksheet (meaning new tab, same document), which opens up a tab <em>before</em> the one I’m already on, for reasons only clear to the Microsoft trickster deity.</p>
+<p>I click OK and my new tab is: blank. To populate the table, I have to tell it how to work with the data—that is, which columns I want to use as my criteria. The Pivot Table Fields modal shows all the columns I selected before:</p>
+<p><img src="./img/fields.png" alt="Pivot Table Fields modal for selecting which data fields should appear in the table."></p>
+<p>Selecting one of those boxes—like Address—adds it to the areas underneath:</p>
+<p><img src="./img/areas.png" alt="Pivot Table Fields modal with Count of Address in the Values area."></p>
+<p>Excel automatically places it in Values, and automatically assigns it “Count” (you can change this to Sum, Average, Max, Min, etc. by clicking on the i icon). Meanwhile, elsewhere on the tab, a table has appeared:</p>
+<p><img src="./img/address.png" alt="The pivot table being built in the spreadsheet, showing Count of Address as &quot;10283.&quot;"></p>
+<p>Not very exciting yet, but that’s because it’s only analyzing one thing: the Count (literally, it’s just counting) of all the entries in the column labeled Address. It’s telling me that there are 10,283 pages in my site, because there are 10,283 rows in my spreadsheet.</p>
+<p>But the beauty of pivot tables is that I can complicate it, neatly.</p>
+<h4>Step 3: Customize the pivot table</h4>
+<p>I go back to my pivot table fields, and I select Section (in addition to Address):</p>
+<p><img src="./img/fields2.png" alt="Pivot Table Fields modal with both Address and Section selected."></p>
+<p>Which, again, automatically adds it to the Values area below:</p>
+<p><img src="./img/areas2.png" alt="Pivot Table Fields modal with Count of Address and Count of Section in the Values area."></p>
+<p>But all this does is add another column to my useless table, telling me that there are 10,282 entries in the Section column:</p>
+<p><img src="./img/address2.png" alt="The pivot table being built in the spreadsheet, showing Count of Address and Count of Section."></p>
+<p>What I want to know is <em>how many</em> pages are in <em>each</em> of the sections, and this is where pivot tables start to shine. I drag “Count of Section” from out of the Values area and into the Rows area:</p>
+<p><img src="./img/areas3.png" alt="Pivot Table Fields modal with Count of Address in the Values area and Section in the Rows area."></p>
+<p>And all of a sudden, <em>my table has something to say</em>:</p>
+<p><img src="./img/output.png" alt="The pivot table built out with Section labels in the first column and page count in the second column."></p>
+<p>Is that not <em>amazing</em>?</p>
+<p>In just a handful of clicks, I went from not knowing anything about scope, to knowing <em>exactly</em> how pages are distributed across the site.</p>
+<h4>Step 4: Tweak the data</h4>
+<p>Sometimes, the data that pops up in the pivot table needs a bit of finessing. For instance, the first time I ran this particular analysis, my section list was twice as long, most with only a few pages to their name. It was too granular and distracting, especially since my goal was to draw attention to the biggest real estate hogs.</p>
+<p>I went back to my data and started deploying that tricky label, “Other,” to replace any section name that was sparsely populated. Through trial and error, I established a cutoff: if a section didn’t have at least fifty pages in it, it wouldn’t be counted individually. I reran the pivot table multiple times (there’s a Refresh option available on right-click) to find the right balance of section representation.</p>
+<p>I can also change what the table displays without changing the data itself. To demonstrate the actual <em>pivoting</em> of pivot tables: if I were no longer interested in knowing how many pages are in each section, I would deselect those options in the Pivot Table Fields modal, and select different ones instead.</p>
+<p>Just changing which fields are selected, and which modal areas I place them in, will change the table itself. I don’t have to start over and build a new table from scratch; I can play around with the data display, with low commitment and minimal fuss.</p>
+<h4>Step 5: Visualize the data</h4>
+<p>The other thing I love about pivot tables is that they make it very easy to visualize what I see in them. It’s one thing to understand the numbers a little more clearly, but I have to communicate the key points to my clients, who don’t have time to pore over elaborate spreadsheets (or learn pivot tables). And that’s where charts can do some heavy lifting.</p>
+<p>First, I select the data in the pivot table that I want to display in the chart. That means everything except the Grand Total and the homepage (the one shown as “blank,” since I wouldn’t have assigned it a section):</p>
+<p><img src="./img/chart.png" alt="The pivot table with portions selected to build a chart."></p>
+<p>Then I select Insert &gt; Chart &gt; Pie:</p>
+<p><img 
+        class="inline-img"
+        src="/img/1000/pie.jpg" 
+        alt="The pivot table with a pie chart displaying the same data."
+        srcset="./img/400/pie.jpg 400w,
+            ./img/600/pie.jpg 600w,
+            ./img/800/pie.jpg 800w,
+            ./img/1000/pie.jpg 1000w"
+        sizes="(min-width: 560px) 460px, calc(81.25vw + 21px)"></p>
+<p>A pie chart doesn’t serve every metric (I use bar and line graphs for other data sets), but it’s perfect for visualizing the real estate of the site. It’s a much more immediate way of showing my clients: <em>wow, that’s a lot of News &amp; Events</em>.</p>
+<h3>The bigger picture</h3>
+<p>Calculating the real estate of a site is one of the first things I do during a content audit, and it’s a very common metric, but it’s far from the only thing you can use pivot tables for. I use pivot tables to count images with alt text versus images without, to triage sections with low readability scores, to compare inlink and outlink counts, and a lot more.</p>
+<p>And pivot tables and pie charts aren’t the only players in my content analysis. I have many other elements to consider during the discovery phase—the site’s structure, the findability and usability of the page content, the technical constraints of the project, the users’ needs and tasks, the business goals for the site, and more—to form a complete understanding of the site content and how it might be transformed.</p>
+<p>If you use automated crawls, and you’re new to pivot tables, I hope this has shown you one way that pivot tables might help you. My biggest recommendation is to experiment with them, since that’s how I’ve learned what I’ve learned. Poke at pivot tables with a sharp stick. Click and unclick every option. Ask, “What happens if I drag this field to <em>this</em> box instead?” See if they make some magic for you, too.</p>
+
+  </div>
+</div>
+      </div>
+    </main>
+
+    <footer class="site-foot">
+      <div class="foot-wrap">
+        <div class="sub-body">
+          <div class="bio">
+  <img class="avatar" src="./img/photo-2.jpg" alt="Portrait of Lisa Maria Marquis.">
+  <div class="bio-copy">
+    
+    <h2 class="lede bio-hed">About Me</h2>
+    
+    <p>Lisa Maria Marquis is an information architect and content strategist specializing in the structural analysis of digital systems, helping organizations to build findable, understandable, and usable content experiences. She is a speaker, workshop facilitator, author of <a href="https://abookapart.com/products/everyday-information-architecture"><em>Everyday Information Architecture</em></a>, coauthor of <a href="https://abookapart.com/products/you-should-write-a-book"><em>You Should Write a Book</em></a>, and the former editor in chief of A Book Apart. She lives near Boston with her partner, two dogs, four chickens, and roughly ten thousand bees.</p>
+
+  </div>
+</div>
+</div>
+        <div class="foot-details">
+
+          <p class="credit">Header art by <a href="https://unsplash.com/search/photos/numbers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jerry Kiesewetter</a></p>
+
+          <p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
