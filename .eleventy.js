@@ -6,6 +6,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addPassthroughCopy("_src/img");
     eleventyConfig.addPassthroughCopy("_src/assets");
+    eleventyConfig.addPassthroughCopy("_redirects");
+
 
     eleventyConfig.addPassthroughCopy("pivot-tables-are-magic");
 
