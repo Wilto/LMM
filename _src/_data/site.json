@@ -42,5 +42,11 @@
     "notfound": "404: Page not found."
   },
   "email": "lisamariamarquis@gmail.com",
+  "shortlinks": [
+    {
+      "short": "testlink",
+      "url": "http://hire.wil.to/"
+    }
+  ],
   "formsuccess": "Success."
 }
