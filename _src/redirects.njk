@@ -1,0 +1,6 @@
+---
+permalink: _redirects
+---
+{%  for link in site.shortlinks %}
+{{ link.short }} {{ link.url }}
+{% endfor %}
