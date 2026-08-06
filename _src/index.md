@@ -1,6 +1,6 @@
 ---
 layout: homepage.njk
-title: I’m Lisa Maria Marquis.
+title: I’m LMM.
 lede: I’m a consultant who thrives on strategizing and organizing complex
   digital information.
 ---
@@ -14,7 +14,7 @@ Got a tricky information or content problem to solve? Let’s talk.
 
 ### Read my book.
 
-[Everyday Information Architecture](https://everydayia.com/) (2019) is a practical guide for designers, content strategists, developers, product managers, and everyone else interested in building well-structured digital content. Available in print and ebook formats.
+Everyday Information Architecture (2019, 2024) is a practical guide for designers, content strategists, developers, product managers, and everyone else interested in building well-structured digital content. Available in print and ebook formats.
 
 ### Take my workshops.
 
@@ -22,8 +22,8 @@ I offer independent workshops on information architecture topics in the fall and
 
 ### Sign up for my newsletter.
 
-[The Future Is Like Pie](https://thefutureislikepie.beehiiv.com/subscribe) is a monthly newsletter with a brief essay and links to interesting writing about design, technology, politics, and culture. I bet you’d like it.	
+[The Future Is Like Pie](https://thefutureislikepie.beehiiv.com/subscribe) is a monthly newsletter with a brief essay and links to interesting writing about design, technology, politics, and culture. I bet you’d like it.
 
 ### A little about me.
 
-Lisa Maria Marquis is an independent consultant specializing in the structural analysis of digital systems, helping organizations to build findable, understandable, and usable product experiences. She is a speaker, workshop leader, author of *Everyday Information Architecture*, avid knitter, and devoted Trekkie. She lives near Boston with her partner, two dogs, four chickens, and roughly ten thousand bees.
+Lisa Maria "LMM" Marquis is a digital strategy consultant, helping organizations to build findable, usable, and maintainable product experiences. She is a speaker and educator, the author of *Everyday Information Architecture*, and the former editor in chief of tech publisher A Book Apart. She loves Star Trek, Kpop, and B-movies. She lives near Boston with her partner, dog, three chickens, and roughly ten thousand bees.
