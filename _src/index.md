@@ -14,7 +14,7 @@ Got a tricky information or content problem to solve? Let’s talk.
 
 ### Read my book.
 
-[Everyday Information Architecture](everydayia.com) (2019, 2024) is a practical guide for designers, content strategists, developers, product managers, and everyone else interested in building well-structured digital content. Available in print and ebook formats.
+[Everyday Information Architecture](https://everydayia.com/) (2019, 2024) is a practical guide for designers, content strategists, developers, product managers, and everyone else interested in building well-structured digital content. Available in print and ebook formats.
 
 ### Take my workshops.
 
