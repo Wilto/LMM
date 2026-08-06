@@ -18,7 +18,7 @@ Got a tricky information or content problem to solve? Let’s talk.
 
 ### Take my workshops.
 
-I offer independent workshops on information architecture topics in the fall and spring—check back for upcoming dates. I also offer workshops for teams and conferences.
+I offer workshops on UX topics for teams and conferences. I occasionally offer independent workshops, but those are currently on hold. Check back later!
 
 ### Sign up for my newsletter.
 
